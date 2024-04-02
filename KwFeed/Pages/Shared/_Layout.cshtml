@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - KwFeed</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/KwFeed1.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" />
+
+</head>
+<body>
+    <header>
+        <nav class="sticky top-0 z-10 block h-[150px] w-full max-w-full px-4 text-white bg-[#254081] border rounded-none shadow-md border-white/80 bg-opacity-80 backdrop-blur-2xl backdrop-saturate-200 lg:px-8 d-grid align-items-center">
+            <div class="flex items-center  justify-between text-blue-gray-900  ps-5">
+                <a href="#" class="mr-4 block cursor-pointer py-1.5 font-sans text-base font-medium leading-relaxed text-inherit antialiased">
+                    <div class="kwfeed-logo-img h-[120px] w-[120px] min-h-[80px] min-w-[80px]"></div>
+                </a>
+                <div class="h-100 flex items-center gap-4">
+                    <div class="h-100 hidden mr-4 lg:block">
+                        <ul class="h-100 flex flex-col gap-2 mt-2 mb-4 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
+                            <li class="block h-[130px] justify-content-center d-flex justify-content-center p-1 font-sans text-sm antialiased font-normal leading-normal w-[200px] hover:bg-[#FEED00] focus:bg-[#FEED00]">
+                                <a href="/" class="flex items-center text-white font-dubai font-bold text-[26px]">
+                                    Home
+                                </a>
+                            </li>
+                            <li class="block h-[130px] justify-content-center d-flex justify-content-center p-1 font-sans text-sm antialiased font-normal leading-normal w-[200px] hover:bg-[#FEED00] focus:bg-[#FEED00]">
+                                <a href="/feed" class="flex items-center text-white font-dubai font-bold text-[26px]">
+                                    Feed
+                                </a>
+                            </li>
+                            <li class="block h-[130px] justify-content-center d-flex justify-content-center p-1 font-sans text-sm antialiased font-normal leading-normal w-[200px] hover:bg-[#FEED00] focus:bg-[#FEED00]">
+                                <a href="#" class="flex items-center text-white font-dubai font-bold text-[26px]">
+                                    Nutrition
+                                </a>
+                            </li>
+                            <li class="block h-[130px] justify-content-center d-flex justify-content-center p-1 font-sans text-sm antialiased font-normal leading-normal w-[200px] hover:bg-[#FEED00] focus:bg-[#FEED00]">
+                                <a href="#" class="flex items-center text-white font-dubai font-bold text-[26px]">
+                                    News
+                                </a>
+                            </li>
+                            <li class="block h-[130px] justify-content-center d-flex justify-content-center p-1 font-sans text-sm antialiased font-normal leading-normal w-[200px] hover:bg-[#FEED00] focus:bg-[#FEED00]">
+                                <a href="#" class="flex items-center text-white font-dubai font-bold text-[26px]">
+                                    Technology
+                                </a>
+                            </li>
+                            <li class="block h-[130px] justify-content-center d-flex justify-content-center p-1 font-sans text-sm antialiased font-normal leading-normal w-[200px] hover:bg-[#FEED00] focus:bg-[#FEED00]">
+                                <a href="#" class="flex items-center text-white font-dubai font-bold text-[26px]">
+                                    Contact Us
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="relative ml-auto h-6 max-h-[40px] w-6 max-w-[40px] select-none rounded-lg text-center align-middle font-sans text-xs font-medium uppercase text-inherit transition-all hover:bg-transparent focus:bg-transparent active:bg-transparent disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none lg:hidden"
+                    id="menu-button"       
+                    type="button">
+                        <span class="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" stroke="black"
+                                    stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div>
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top text-muted">
+        <div class="container">
+            &copy; 2024 - KwFeed - <a asp-area="" asp-page="/Privacy">Privacy</a>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

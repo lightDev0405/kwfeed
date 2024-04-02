@@ -1,0 +1,136 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.bg-kwfeed-main {
+    background-color: #254081;
+}
+
+.kwfeed-header-height{
+    height:150px;
+}
+
+.kwfeed-logo-img {
+    background-image: url("../img/KW new logo .png");
+    background-size: cover;
+}
+.kwfeed-hero-img {
+    position: absolute;
+    background-image: url("../img/KW Dash.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    width:100%;
+}
+.kwfeed-w-10p {
+    width: 10px;
+}
+.kwfeed-w-20p {
+    width: 20px;
+}
+.kwfeed-w-30p {
+    width: 30px;
+}
+.kwfeed-w-40p {
+    width: 40px;
+}
+.kwfeed-w-50p {
+    width: 50px;
+}
+.kwfeed-w-60p {
+    width: 60px;
+}
+.kwfeed-w-70p {
+    width: 70px;
+}
+.kwfeed-w-80p {
+    width: 80px;
+}
+.kwfeed-w-90p {
+    width: 90px;
+}
+.kwfeed-w-100p {
+    width: 100px;
+}
+.kwfeed-w-150p {
+    width: 150px;
+}
+.kwfeed-w-200p {
+    width: 200px;
+}
+
+.kwfeed-h-10p {
+    height: 10px;
+}
+.kwfeed-h-20p {
+    height: 20px;
+}
+.kwfeed-h-30p {
+    height: 30px;
+}
+.kwfeed-h-40p {
+    height: 40px;
+}
+.kwfeed-h-50p {
+    height: 50px;
+}
+.kwfeed-h-60p {
+    height: 60px;
+}
+.kwfeed-h-70p {
+    height: 70px;
+}
+.kwfeed-h-80p {
+    height: 80px;
+}
+.kwfeed-h-90p {
+    height: 90px;
+}
+.kwfeed-h-100p {
+    height: 100px;
+}
+.kwfeed-h-150p {
+    height: 150px;
+}
+.kwfeed-h-200p {
+    height: 200px;
+}
+.kwfeed-navbar-item {
+    width: 30%;
+    margin-left:50px;
+    margin-right:50px;
+    height: 100%;
+    min-width:max-content;
+    font-family: Dubai;
+    font-weight:bold;
+    font-size: 27px;
+    color: white;
+    list-style-type: none;
+}
+.kwfeed-navbar-item::marker{
+    display:none !important;
+}
+
+@media (max-width: 1400px) {
+    .navbar ul {
+        flex-direction: column;
+    }
+}
