@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/KwFeed1.styles.css" asp-append-version="true" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" />
 
 </head>
 <body>
@@ -20,32 +19,37 @@
                 <div class="h-100 flex items-center gap-4">
                     <div class="h-100 hidden mr-4 lg:block">
                         <ul class="h-100 flex flex-col gap-2 mt-2 mb-4 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
-                            <li class="block h-[130px] justify-content-center d-flex justify-content-center p-1 font-sans text-sm antialiased font-normal leading-normal w-[200px] hover:bg-[#FEED00] focus:bg-[#FEED00]">
+                            <li class="block h-[130px] justify-content-center d-flex justify-content-center p-1 font-sans text-sm antialiased font-normal leading-normal w-[180px] hover:bg-[#FEED00] focus:bg-[#FEED00]">
                                 <a href="/" class="flex items-center text-white font-dubai font-bold text-[26px]">
                                     Home
                                 </a>
                             </li>
-                            <li class="block h-[130px] justify-content-center d-flex justify-content-center p-1 font-sans text-sm antialiased font-normal leading-normal w-[200px] hover:bg-[#FEED00] focus:bg-[#FEED00]">
+                            <li class="block h-[130px] justify-content-center d-flex justify-content-center p-1 font-sans text-sm antialiased font-normal leading-normal w-[180px] hover:bg-[#FEED00] focus:bg-[#FEED00]">
+                                <a href="/about" class="flex items-center text-white font-dubai font-bold text-[26px]">
+                                    About
+                                </a>
+                            </li>
+                            <li class="block h-[130px] justify-content-center d-flex justify-content-center p-1 font-sans text-sm antialiased font-normal leading-normal w-[180px] hover:bg-[#FEED00] focus:bg-[#FEED00]">
                                 <a href="/feed" class="flex items-center text-white font-dubai font-bold text-[26px]">
                                     Feed
                                 </a>
                             </li>
-                            <li class="block h-[130px] justify-content-center d-flex justify-content-center p-1 font-sans text-sm antialiased font-normal leading-normal w-[200px] hover:bg-[#FEED00] focus:bg-[#FEED00]">
+                            <li class="block h-[130px] justify-content-center d-flex justify-content-center p-1 font-sans text-sm antialiased font-normal leading-normal w-[180px] hover:bg-[#FEED00] focus:bg-[#FEED00]">
                                 <a href="#" class="flex items-center text-white font-dubai font-bold text-[26px]">
                                     Nutrition
                                 </a>
                             </li>
-                            <li class="block h-[130px] justify-content-center d-flex justify-content-center p-1 font-sans text-sm antialiased font-normal leading-normal w-[200px] hover:bg-[#FEED00] focus:bg-[#FEED00]">
+                            <li class="block h-[130px] justify-content-center d-flex justify-content-center p-1 font-sans text-sm antialiased font-normal leading-normal w-[180px] hover:bg-[#FEED00] focus:bg-[#FEED00]">
                                 <a href="#" class="flex items-center text-white font-dubai font-bold text-[26px]">
                                     News
                                 </a>
                             </li>
-                            <li class="block h-[130px] justify-content-center d-flex justify-content-center p-1 font-sans text-sm antialiased font-normal leading-normal w-[200px] hover:bg-[#FEED00] focus:bg-[#FEED00]">
+                            <li class="block h-[130px] justify-content-center d-flex justify-content-center p-1 font-sans text-sm antialiased font-normal leading-normal w-[180px] hover:bg-[#FEED00] focus:bg-[#FEED00]">
                                 <a href="#" class="flex items-center text-white font-dubai font-bold text-[26px]">
                                     Technology
                                 </a>
                             </li>
-                            <li class="block h-[130px] justify-content-center d-flex justify-content-center p-1 font-sans text-sm antialiased font-normal leading-normal w-[200px] hover:bg-[#FEED00] focus:bg-[#FEED00]">
+                            <li class="block h-[130px] justify-content-center d-flex justify-content-center p-1 font-sans text-sm antialiased font-normal leading-normal w-[180px] hover:bg-[#FEED00] focus:bg-[#FEED00]">
                                 <a href="#" class="flex items-center text-white font-dubai font-bold text-[26px]">
                                     Contact Us
                                 </a>
@@ -53,11 +57,11 @@
                         </ul>
                     </div>
                     <button class="relative ml-auto h-6 max-h-[40px] w-6 max-w-[40px] select-none rounded-lg text-center align-middle font-sans text-xs font-medium uppercase text-inherit transition-all hover:bg-transparent focus:bg-transparent active:bg-transparent disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none lg:hidden"
-                    id="menu-button"       
-                    type="button">
+                            id="menu-button"
+                            type="button">
                         <span class="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
                             <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" stroke="black"
-                                    stroke-width="2">
+                                 stroke-width="2">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
                             </svg>
                         </span>
@@ -71,10 +75,97 @@
             @RenderBody()
         </main>
     </div>
-
-    <footer class="border-top text-muted">
-        <div class="container">
-            &copy; 2024 - KwFeed - <a asp-area="" asp-page="/Privacy">Privacy</a>
+    <footer class="border-top text-muted bg-[#73B0F8] bg-opacity-25">
+        <div class="container flex p-[50px] grid grid-cols-5 w-full">
+            <a href="#" class="col-span-1 mx-[20px] justify-center items-center flex">
+                <img src="./img/site/UFAS.png" class=" h-[80%]" />
+            </a>
+            <a href="#" class="col-span-1 mx-[20px] justify-center items-center flex">
+                <img src="./img/site/FEMAS.png" class=" h-[80%]" />
+            </a>
+            <a href="#" class="col-span-1 mx-[20px] justify-center items-center flex">
+                <img src="./img/site/TRANSITION.png" class=" h-[80%]" />
+            </a>
+            <a href="#" class=" col-span-1 mx-[20px] justify-center items-center flex">
+                <img src="./img/site/RED TRACTOR.png" class=" h-[80%]" />
+            </a>
+            <a href="#" class=" col-span-1 mx-[20px] justify-center items-center flex">
+                <img src="./img/site/FAR.png" class="h-[80%]" />
+            </a>
+        </div>
+        <div class="bg-[#254081]">
+            <div class="flex grid grid-cols-2 py-5 px-[100px]">
+                <div class="col-span-1 border-r-2 border-white py-[50px]">
+                    <div class="text-white uppercase text-[34px] font-bold font-dubai">
+                        Sign up for our newsletter
+                    </div>
+                    <div class="text-white text-[14px] w-[68%]">
+                        Stay in the loop with the latest updates, exclusive offers, and product releases by signing up for our newsletter today!
+                    </div>
+                    <div class="mt-[30px] h-[60px] relative w-[68%]">
+                        <input type="search" id="default-search" class="block h-full w-full p-4 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500" placeholder="Your email*" required />
+                        <button type="submit" class=" h-full w-[100px] text-black absolute end-0 bottom-0 bg-[#FEED00] hover:bg-[#FEAA00] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2">Search</button>
+                    </div>
+                </div>
+                <div class="col-span-1 px-[100px] text-white">
+                    <div class="flex d-grid grid-cols-2">
+                        <div class="col-span-1 d-grid">
+                            <div class="font-bold text-[20px] hover:cursor-pointer">
+                                Quick Links
+                            </div>
+                            <a class="mt-[10px] hover:cursor-pointer">
+                                Home
+                            </a>
+                            <a class="mt-[10px] hover:cursor-pointer">
+                                About
+                            </a>
+                            <a class="mt-[10px] hover:cursor-pointer">
+                                Feed
+                            </a>
+                            <a class="mt-[10px] hover:cursor-pointer">
+                                Nutrition
+                            </a>
+                            <a class="mt-[10px] hover:cursor-pointer">
+                                Technology
+                            </a>
+                            <a class="mt-[10px] hover:cursor-pointer">
+                                News
+                            </a>
+                            <a class="mt-[10px] hover:cursor-pointer">
+                                Contact Us
+                            </a>
+                        </div>
+                        <div class="col-span-1 d-grid">
+                            <div class="font-bold text-[20px] hover:cursor-pointer">
+                                Additional Links
+                            </div>
+                            <a class="mt-[10px] hover:cursor-pointer">
+                                Cookies & Privacy Policy
+                            </a>
+                            <a class="mt-[10px] hover:cursor-pointer">
+                                Sales T&C's
+                            </a>
+                            <a class="mt-[10px] hover:cursor-pointer">
+                                Sitemap
+                            </a>
+                            <a class="mt-[10px] hover:cursor-pointer">
+                                Site Credits
+                            </a>
+                            <a class="mt-[10px] hover:cursor-pointer">
+                                Competition T&C's
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex d-grid grid-cols-2 text-black pt-[10px] pb-[30px]">
+            <div class="col-span-1 px-[100px]">
+                Website design by <span class="font-bold">Truly Content</span>
+            </div>
+            <div class="col-span-1 text-center">
+                All rights reserved KWFEEDS
+            </div>
         </div>
     </footer>
 

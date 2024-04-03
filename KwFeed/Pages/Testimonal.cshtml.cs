@@ -1,13 +1,13 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace KwFeed1.Pages
+namespace KwFeed.Pages
 {
-    public class PrivacyModel : PageModel
+    public class TestimonalModel : PageModel
     {
-        private readonly ILogger<PrivacyModel> _logger;
+        private readonly ILogger<TestimonalModel> _logger;
 
-        public PrivacyModel(ILogger<PrivacyModel> logger)
+        public TestimonalModel(ILogger<TestimonalModel> logger)
         {
             _logger = logger;
         }

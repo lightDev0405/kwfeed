@@ -33,13 +33,25 @@ body {
     background-image: url("../img/KW new logo .png");
     background-size: cover;
 }
-.kwfeed-hero-img {
-    position: absolute;
+.kwfeed-dash-img {
     background-image: url("../img/KW Dash.png");
     background-size: 100% auto;
     background-repeat: no-repeat;
     width:100%;
 }
+.kwfeed-hero-img {
+    background-image: url("../img/KW hero image.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.kw-item2 {
+    background-image: url("../img/item/item2.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+
 .kwfeed-w-10p {
     width: 10px;
 }
@@ -133,4 +145,79 @@ body {
     .navbar ul {
         flex-direction: column;
     }
+}
+
+
+.background-kw4 {
+    background-image: url('../img/KW land img4.png');
+    background-size: 40vw;
+    background-repeat:no-repeat;
+    background-position: bottom right;
+}
+
+.background-badge-logo-rt {
+    background-image: url('../img/KW new logo .png');
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    background-position-x: calc(100% - 22px);
+    background-position-y: 20px;
+}
+
+.back-carousel-left-arrow {
+    background-image: url('../img/arrow-left.png');
+    background-size: 20px;
+    background-repeat: no-repeat;
+}
+.back-carousel-right-arrow {
+    background-image: url('../img/arrow-right.png');
+    background-size: 20px;
+    background-repeat: no-repeat;
+}
+
+@media (min-width: 768px) {
+
+    .carousel-inner .carousel-item-right.active,
+    .carousel-inner .carousel-item-next {
+        transform: translateX(50%);
+    }
+
+    .carousel-inner .carousel-item-left.active,
+    .carousel-inner .carousel-item-prev {
+        transform: translateX(-50%);
+    }
+}
+
+/* large - display 3 */
+@media (min-width: 992px) {
+
+    .carousel-inner .carousel-item-right.active,
+    .carousel-inner .carousel-item-next {
+        transform: translateX(33%);
+    }
+
+    .carousel-inner .carousel-item-left.active,
+    .carousel-inner .carousel-item-prev {
+        transform: translateX(-33%);
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+
+        .carousel-inner .carousel-item > div:first-child {
+            display: block;
+        }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+.carousel-inner .carousel-item-right,
+.carousel-inner .carousel-item-left {
+    transform: translateX(0);
 }
